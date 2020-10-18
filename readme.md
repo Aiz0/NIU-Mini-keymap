@@ -1,5 +1,5 @@
 # Aiz's NIU Mini layout
-My personal layout for the [NIU Mini](https://kbdfans.com/products/niu-mini-40-diy-kit). 
+My personal layout for the [NIU Mini](https://kbdfans.com/products/niu-mini-40-diy-kit).
 
 This is based on the [colemak](https://colemak.com/) layout since I like it more than qwerty.
 
@@ -16,7 +16,7 @@ To build QMK keymaps you need to setup your QMK environment. See the [setup tuto
 
 ## Build and flash
 I don't actually recommend flashing this layout, instead use it as inspiration for your own.
-Check out the included [NIU Mini layouts](https://github.com/qmk/qmk_firmware/tree/master/keyboards/niu_mini/keymaps) if you haven't already. 
+Check out the included [NIU Mini layouts](https://github.com/qmk/qmk_firmware/tree/master/keyboards/niu_mini/keymaps) if you haven't already.
 
 Prerequisites:
 - QMK environment
@@ -44,5 +44,5 @@ qmk compile -kb niu_mini -km aiz
 
 Finally flash the layout.
 ```
-qmk compile -kb niu_mini -km aiz
+qmk flash -kb niu_mini -km aiz
 ```
