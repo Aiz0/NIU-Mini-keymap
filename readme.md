@@ -29,7 +29,7 @@ git clone https://github.com/Aiz0/NIU-Mini-keymap
 Create a new directory for the keymap in the QMK NIU Mini keymaps folder.
 
 ```
-mkdir ~/qmk_firmware/keyboards/niu_mini/keymaps/aiz
+mkdir $QMK_HOME/keyboards/niu_mini/keymaps/aiz
 ```
 
 Copy the necessary files to the new directory you made. They are:
