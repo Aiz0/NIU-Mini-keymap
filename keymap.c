@@ -1,23 +1,5 @@
 #include QMK_KEYBOARD_H
 
-enum unicode_names {
-    SMALL_Å,
-    BIG_Å,
-    SMALL_Ä,
-    BIG_Ä,
-    SMALL_Ö,
-    BIG_Ö
-};
-
-const uint32_t PROGMEM unicode_map[] = {
-    [SMALL_Å] = 0x00E5,
-    [BIG_Å]   = 0x00C5,
-    [SMALL_Ä] = 0x00E4,
-    [BIG_Ä]   = 0x00C4,
-    [SMALL_Ö] = 0x00F6,
-    [BIG_Ö]  = 0x00D6
-};
-
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     /* Layer 0 Colemak
@@ -57,8 +39,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
      /* Layer 2 Navigation and music
-      * ,-----------------------------------------------------------------------------------. 
-      * |      |      |      | MStop| Vol+ |      | Home | PGDN | PGUP | End  |      |      | 
+      * ,-----------------------------------------------------------------------------------.
+      * |      |      |      | MStop| Vol+ |      | Home | PGDN | PGUP | End  |      |      |
       * |------+------+------+------+------+-------------+------+------+------+------+------|
       * |  Del | CTRL |      | MPrev| Mplay|MNext | Left | Down |  Up  |Right |      |      |
       * |------+------+------+------+------+------|------+------+------+------+------+------|
@@ -70,7 +52,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      [2] = LAYOUT_planck_mit(
          XXXXXXX, XXXXXXX, XXXXXXX, KC_MSTP, KC_VOLU, XXXXXXX, KC_HOME, KC_PGDN, KC_PGUP, KC_END,  XXXXXXX, XXXXXXX,
          KC_DEL,  KC_LCTL, XXXXXXX, KC_MPRV, KC_MPLY, KC_MNXT, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, XXXXXXX, XXXXXXX,
-         XXXXXXX, XXXXXXX, XXXXXXX, KC_MUTE, KC_VOLD, XXXXXXX, XXXXXXX, XP(SMALL_Å, BIG_Å), XP(SMALL_Ä, BIG_Ä), XP(SMALL_Ö, BIG_Ö), XXXXXXX, XXXXXXX,
+         XXXXXXX, XXXXXXX, XXXXXXX, KC_MUTE, KC_VOLD, XXXXXXX, XXXXXXX, KC_F13, KC_F14 ,KC_F15 , XXXXXXX, XXXXXXX,
          XXXXXXX, XXXXXXX, XXXXXXX, KC_LSFT, MO(3),       _______,      KC_TRNS, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
      ),
 
@@ -92,7 +74,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
          XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_TRNS,     XXXXXXX,      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
      )
 
-    
+
       /* Layer 4 Game 1 qwerty and numbers
       * ,-----------------------------------------------------------------------------------.
       * |      |   1  |   2  |   3  |   4  |  5   |      |      |      |      |      |      |
