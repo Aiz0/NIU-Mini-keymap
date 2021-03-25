@@ -3,7 +3,7 @@ My personal layout for the [NIU Mini](https://kbdfans.com/products/niu-mini-40-d
 
 This is based on the [colemak](https://colemak.com/) layout since I like it more than qwerty.
 
-Sometimes I write in Swedish and need the nordic characters for that. I don't know if unicode maps are the best way to solve that though.
+Sometimes I write in Swedish and need the nordic characters for that. I solve this by using the [EurKEY](https://eurkey.steffen.bruentjen.eu/) layout.
 
 The NIU Mini can run QMK firmware and this layout is made with QMK. If you don't know what QMK is read the next section.
 
@@ -34,7 +34,6 @@ mkdir $QMK_HOME/keyboards/niu_mini/keymaps/aiz
 
 Copy the necessary files to the new directory you made. They are:
 - keymap.c
-- rules.mk
 - config.h
 
 Compile the layout.
