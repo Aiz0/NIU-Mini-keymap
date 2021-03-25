@@ -4,6 +4,5 @@
 #include "../../config.h"
 
 #define RGBLIGHT_SLEEP
-#define UNICODE_SELECTED_MODES UC_LNX
 
 #endif
