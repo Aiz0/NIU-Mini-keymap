@@ -4,19 +4,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     /* Layer 0 Colemak
      * ,-----------------------------------------------------------------------------------.
-     * | Esc  |   Q  |   W  |   F  |   P  |   G  |   J  |   L  |   U  |   Y  |   ;  |   `  |
+     * | Esc  |   Q  |   W  |   F  |   P  |   B  |   J  |   L  |   U  |   Y  |   ;  |   `  |
      * |------+------+------+------+------+-------------+------+------+------+------+------|
-     * | Bksp |   A  |   R  |   S  |   T  |   D  |   H  |   N  |   E  |   I  |   O  |  '   |
+     * | Bksp |   A  |   R  |   S  |   T  |   G  |   M  |   N  |   E  |   I  |   O  |  '   |
      * |------+------+------+------+------+------|------+------+------+------+------+------|
-     * |  Tab |   Z  |   X  |   C  |   V  |   B  |   K  |   M  |   ,  |   .  |  /   |Enter |
+     * |  Tab |   Z  |   X  |   C  |   D  |   V  |   K  |   H  |   ,  |   .  |  /   |Enter |
      * |------+------+------+------+------+------+------+------+------+------+------+------|
      * |      | CTlr |  ALT | Shift|Layer1|    Space    |Layer2| GUI  | Ctlr |      |      |
      * `-----------------------------------------------------------------------------------'
      */
     [0] = LAYOUT_planck_mit(
-        KC_ESC,  KC_Q,    KC_W,    KC_F,    KC_P,  KC_G,   KC_J,   KC_L,  KC_U,    KC_Y,    KC_SCLN, KC_GRV,
-        KC_BSPC, KC_A,    KC_R,    KC_S,    KC_T,  KC_D,   KC_H,   KC_N,  KC_E,    KC_I,    KC_O,    KC_QUOT,
-        KC_TAB,  KC_Z,    KC_X,    KC_C,    KC_V,  KC_B,   KC_K,   KC_M,  KC_COMM, KC_DOT,  KC_SLSH, KC_ENT,
+        KC_ESC,  KC_Q,    KC_W,    KC_F,    KC_P,  KC_B,   KC_J,   KC_L,  KC_U,    KC_Y,    KC_SCLN, KC_GRV,
+        KC_BSPC, KC_A,    KC_R,    KC_S,    KC_T,  KC_G,   KC_M,   KC_N,  KC_E,    KC_I,    KC_O,    KC_QUOT,
+        KC_TAB,  KC_Z,    KC_X,    KC_C,    KC_D,  KC_V,   KC_K,   KC_H,  KC_COMM, KC_DOT,  KC_SLSH, KC_ENT,
         XXXXXXX, KC_LCTL, KC_LALT, KC_LSFT, MO(1),     KC_SPC,     MO(2), KC_RGUI, KC_RCTL, KC_ALGR, XXXXXXX
     ),
 
