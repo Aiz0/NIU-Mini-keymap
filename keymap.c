@@ -22,20 +22,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     /* Layer 1 Numbers and Symbols
      * ,-----------------------------------------------------------------------------------.
-     * |      |  !   |  @   |  #   |  $   |   %  |  ^   |  &   |  *   |  (   |   )  |   |   |
+     * |      |  !   |  @   |  #   |  $   |   %  |  =   |  7   |  8   |  9   |  +   |       |
      * |------+------+------+------+------+-------------+------+------+------+------+------ |
-     * |      |   1  |   2  |   3  |   4  |   5  |  6   |  7   |   8  |  9   |  0   |   \   |
+     * |      |shift |   [  |   }  |   (  |   ^  |  *   |  4   |   5  |  6   |  -   |       |
      * |------+------+------+------+------+------|------+------+------+------+------+------ |
-     * |      |      |      |  [   |  ]   |      |      |  -   |   =  |      |      |       |
+     * |      |  |   |   ]  |   }  |   )  |   &  |  _   |  1   |   2  |  3   |  \   |       |
      * |------+------+------+------+------+------+------+------+------+------+------+------ |
-     * |      |      |      |      |      |      |      |Shift |      |      |      |       |
+     * |      |      |      |      |      |      0      |      |      |      |      |       |
      * `----------------------------------------------------------------------------------- '
      */
     [1] = LAYOUT_planck_mit (
-        XXXXXXX, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, XXXXXXX ,
-        XXXXXXX, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_BSLS ,
-        XXXXXXX, XXXXXXX, XXXXXXX, KC_LBRC, KC_RBRC, XXXXXXX, XXXXXXX, KC_MINS, KC_EQL,  XXXXXXX, XXXXXXX, XXXXXXX ,
-        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______,     _______,      KC_RSFT, XXXXXXX, XXXXXXX,XXXXXXX,  XXXXXXX
+        XXXXXXX, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_EQL,  KC_7,    KC_8,    KC_9,    KC_RPRN, XXXXXXX ,
+        XXXXXXX, KC_LSFT, KC_LBRC, KC_LCBR, KC_LPRN, KC_CIRC, KC_ASTR, KC_4,    KC_5,    KC_6,    KC_MINS, XXXXXXX ,
+        XXXXXXX, KC_PIPE, KC_RBRC, KC_RCBR, KC_RPRN, KC_AMPR, KC_UNDS, KC_1,    KC_2,    KC_3,    KC_BSLS, XXXXXXX ,
+        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______,       KC_O,       XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
     ),
 
      /* Layer 2 Navigation and music
