@@ -1,24 +1,34 @@
 = Aiz's NIU Mini layout
 
+// URIs:
+:uri-niu-mini: https://kbdfans.com/products/niu-mini-40-diy-kit
+:uri-colemak: https://colemak.com
+:uri-eurkey: https://eurkey.steffen.bruentjen.eu
+:uri-qmk-doc: https://docs.qmk.fm/#
+:uri-qmk-newbs: {uri-qmk-doc}/newbs
+:uri-qmk-setup: {uri-qmk-doc}/newbs_getting_started
+:uri-qmk-git-niu-mini: https://github.com/qmk/qmk_firmware/tree/master/keyboards/niu_mini/keymaps
+
+
 == What is this?
-My personal keyboard layout for the link:https://kbdfans.com/products/niu-mini-40-diy-kit[NIU Mini].
+My personal keyboard layout for the {uri-niu-mini}[NIU Mini].
 
-This is based on the link:https://colemak.com/[colemak] layout since I like it more than qwerty.
+This is based on the {uri-colemak}[colemak] layout since I like it more than qwerty.
 
-Sometimes I write in Swedish and need the nordic characters for that. I solve this by using the link:https://eurkey.steffen.bruentjen.eu/[EurKEY] layout.
+Sometimes I write in Swedish and need the nordic characters for that. I solve this by using the {uri-eurkey}[EurKEY] layout.
 
 The NIU Mini can run QMK firmware and this layout is made with QMK. If you don't know what QMK is read the next section.
 
 == What is QMK
 QMK firmware is the software that runs on your keyboard.
 
-If you are brand new to QMK, check out the link:https://docs.qmk.fm/#/[documentation] and the link:https://docs.qmk.fm/#/newbs[Complete Newbs Guide].
+If you are brand new to QMK, check out the {uri-qmk-doc}[documentation] and the {uri-qmk-newbs}[Complete Newbs Guide].
 
-To build QMK keymaps you need to setup your QMK environment. See the link:https://docs.qmk.fm/#/newbs_getting_started[setup tutorial] on how to do that.
+To build QMK keymaps you need to setup your QMK environment. See the {uri-qmk-setup}[setup tutorial] on how to do that.
 
 == Build and flash
 I don't actually recommend flashing this layout, instead use it as inspiration for your own.
-Check out the included link:https://github.com/qmk/qmk_firmware/tree/master/keyboards/niu_mini/keymaps[NIU Mini layouts] if you haven't already.
+Check out the included {uri-qmk-git-niu-mini}[NIU Mini layouts] if you haven't already.
 
 .Prerequisites
 - QMK environment
