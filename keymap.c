@@ -58,19 +58,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
      /* Layer 3 Navigation and music
       * ,-----------------------------------------------------------------------------------.
-      * |      |      |      | MStop| Vol+ |      | Home | PGDN | PGUP | End  |      |      |
+      * |      |MStop | Mute | Vol- | Vol+ |MNext | Home | PGDN | PGUP | End  |      |      |
       * |------+------+------+------+------+-------------+------+------+------+------+------|
-      * |  Del | CTRL |      | MPrev| Mplay|MNext | Left | Down |  Up  |Right |      |      |
+      * |  Del |      |  ALT |Shift | CTRL |MPlay | Left | Down |  Up  |Right |      |      |
       * |------+------+------+------+------+------|------+------+------+------+------+------|
-      * |      |      |      | Mute | Vol- |      |      |   Å  |   Ä  |  Ö   |      |      |
+      * |      | Undo | Cut  | Copy | Paste|MPrev |      |      |      |      |      |      |
       * |------+------+------+------+------+------+------+------+------+------+------+------|
-      * |      |      |      | Shift|Layer3|      |      |      |      |      |      |      |
+      * |      |      |      |      |Layer4|      |      |      |      |      |      |      |
       * `-----------------------------------------------------------------------------------'
       */
      [3] = LAYOUT_planck_mit(
-         XXXXXXX, XXXXXXX, XXXXXXX, KC_MSTP, KC_VOLU, XXXXXXX, KC_HOME, KC_PGDN, KC_PGUP, KC_END,  XXXXXXX, XXXXXXX,
-         KC_DEL,  KC_LCTL, XXXXXXX, KC_MPRV, KC_MPLY, KC_MNXT, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, XXXXXXX, XXXXXXX,
-         XXXXXXX, XXXXXXX, XXXXXXX, KC_MUTE, KC_VOLD, XXXXXXX, XXXXXXX, ALGR(KC_W), ALGR(KC_A), ALGR(KC_O), XXXXXXX, XXXXXXX,
+         XXXXXXX, KC_MSTP, KC_MUTE, KC_VOLD, KC_VOLU, KC_MNXT, KC_HOME, KC_PGDN, KC_PGUP, KC_END,  XXXXXXX, XXXXXXX,
+         KC_DEL,  XXXXXXX, KC_LALT, KC_LSFT, KC_LCTL, KC_MPLY, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, XXXXXXX, XXXXXXX,
+         XXXXXXX, C(KC_Z), C(KC_X), C(KC_C), C(KC_V), KC_MPRV, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
          XXXXXXX, XXXXXXX, XXXXXXX, KC_LSFT, MO(4),       _______,      KC_TRNS, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
      ),
 
