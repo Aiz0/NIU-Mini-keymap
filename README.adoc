@@ -10,6 +10,7 @@
 :uri-qmk-newbs: {uri-qmk-doc}/newbs
 :uri-qmk-setup: {uri-qmk-doc}/newbs_getting_started
 :uri-qmk-git-niu-mini: https://github.com/qmk/qmk_firmware/tree/master/keyboards/niu_mini/keymaps
+:uri-qmk-udev-rules: https://github.com/qmk/qmk_firmware/blob/master/util/udev/50-qmk.rules
 // images:
 :image-uri-niu-mini: https://cdn.shopify.com/s/files/1/1473/3902/files/40__01.jpg
 
@@ -18,7 +19,7 @@ My personal keyboard layout for the {uri-niu-mini}[NIU Mini] keyboard.
 
 image::{image-uri-niu-mini}[Picture of the NIU Mini keyboard]
 A compact 40% (12x4) ortholinear keyboard kit sold by KBDFans.
-The NIU Mini can run QMK firmware and this layout is made with QMK. If you don't know what QMK is read the section <<What is QMK>>.
+The NIU Mini can run QMK firmware and this layout is made with QMK. If you don't know what QMK is read the section <<What is QMK?>>.
 
 === Layout
 This keymap uses the {uri-colemak-mod-dh}[Colemak-DH] keyboard layout which is a mod on the {uri-colemak}[Colemak] layout.
@@ -28,15 +29,16 @@ A comparision between layouts has been made {uri-layout-compare}[Here].
 To type special symbols and nordic characers the {uri-eurkey}[EurKEY] layout is required to be installed and enabled.
 
 
-== What is QMK
-QMK firmware is the software that runs on your keyboard.
+== What is QMK?
+QMK firmware is the software that runs on your keyboard... Well, on some keyboards.
 
 If you are brand new to QMK, check out the {uri-qmk-doc}[documentation] and the {uri-qmk-newbs}[Complete Newbs Guide].
 
 To build QMK keymaps you need to setup your QMK environment. See the {uri-qmk-setup}[setup tutorial] on how to do that.
 
 == Build and flash
-I don't actually recommend flashing this layout, instead use it as inspiration for your own.
+If you don't fancy yourself using the {uri-colemak-mod-dh}[Colemak-DH] layout then I don't recommend flashing this layout,
+instead use it as inspiration for your own.
 Check out the included {uri-qmk-git-niu-mini}[NIU Mini layouts] if you haven't already.
 
 .Prerequisites
@@ -68,3 +70,5 @@ Finally flash the layout.
 ----
 qmk flash -kb niu_mini -km aiz
 ----
+
+TIP: On Linux, if you can't run these commands without superuser privileges you should place {uri-qmk-udev-rules}[this] file into `/etc/udev/rules.d/`.
