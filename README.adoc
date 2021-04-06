@@ -8,12 +8,17 @@
 :uri-qmk-newbs: {uri-qmk-doc}/newbs
 :uri-qmk-setup: {uri-qmk-doc}/newbs_getting_started
 :uri-qmk-git-niu-mini: https://github.com/qmk/qmk_firmware/tree/master/keyboards/niu_mini/keymaps
-
+// images:
+:image-uri-niu-mini: https://cdn.shopify.com/s/files/1/1473/3902/files/40__01.jpg
 
 == What is this?
-My personal keyboard layout for the {uri-niu-mini}[NIU Mini].
+My personal keyboard layout for the {uri-niu-mini}[NIU Mini] keyboard.
+
+image::{image-uri-niu-mini}[Picture of the NIU Mini keyboard]
+A compact 40% (12x4) ortholinear keyboard kit sold by KBDFans.
 
 This is based on the {uri-colemak}[colemak] layout since I like it more than qwerty.
+
 
 Sometimes I write in Swedish and need the nordic characters for that. I solve this by using the {uri-eurkey}[EurKEY] layout.
 
