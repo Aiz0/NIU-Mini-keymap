@@ -74,7 +74,25 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
          XXXXXXX, XXXXXXX, XXXXXXX, KC_LSFT, MO(4),       _______,      KC_TRNS, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
      ),
 
-      /* Layer 4
+      /* Layer 4 Function keys
+      * ,-----------------------------------------------------------------------------------.
+      * |      |      |      |      |      |      |      |  F1  |  F2  |  F3  |  F4  | TG5  |
+      * |------+------+------+------+------+-------------+------+------+------+------+------|
+      * |      | GUI  |  ALT |Shift | CTRL |      |      |  F5  |  F6  |  F7  |  F8  |      |
+      * |------+------+------+------+------+------|------+------+------+------+------+------|
+      * |      |      |      |      |      |      |      |  F9  |  F10 |  F11 |  F12 |      |
+      * |------+------+------+------+------+------+------+------+------+------+------+------|
+      * |      |      |      |      |      |      |      |      |      |      |      |      |
+      * `-----------------------------------------------------------------------------------'
+      */
+     [4] = LAYOUT_planck_mit(
+         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_F1, KC_F2,  KC_F3,  KC_F4,    TG(5),
+         XXXXXXX, KC_LGUI, KC_LALT, KC_SLSH, KC_LCTL, XXXXXXX, XXXXXXX, KC_F5, KC_F6,  KC_F7,  KC_F8,    XXXXXXX,
+         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_F9, KC_F10, KC_F11, KC_F12, XXXXXXX,
+         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_TRNS,     XXXXXXX,      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
+     ),
+
+      /* Layer 5 Settings
       * ,-----------------------------------------------------------------------------------.
       * |Tgnkro|      |      |      |      |      |      | RMo_P| RMO_B| RMo_R|      |      |
       * |------+------+------+------+------+-------------+------+------+------+------+------|
@@ -85,8 +103,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       * |      |      |      |      |      |      |      |      |      |      |      |      |
       * `-----------------------------------------------------------------------------------'
       */
-     [4] = LAYOUT_planck_mit(
-         NK_TOGG, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, RGB_M_P, RGB_M_B, RGB_M_R, XXXXXXX, XXXXXXX,
+     [5] = LAYOUT_planck_mit(
+         NK_TOGG, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, RGB_M_P, RGB_M_B, RGB_M_R, XXXXXXX, _______,
          XXXXXXX, RGB_MOD, RGB_HUI, RGB_SAI, RGB_VAI, RGB_SPI, XXXXXXX, RGB_M_SW,RGB_TOG, RGB_M_K, XXXXXXX, XXXXXXX,
          XXXXXXX, RGB_RMOD,RGB_HUD, RGB_SAD, RGB_VAD, RGB_SPD, XXXXXXX, RGB_M_X, RGB_M_SN,RGB_M_G, XXXXXXX, XXXXXXX,
          XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_TRNS,     XXXXXXX,      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
