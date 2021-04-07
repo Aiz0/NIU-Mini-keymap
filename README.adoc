@@ -19,7 +19,8 @@ My personal keyboard layout for the {uri-niu-mini}[NIU Mini] keyboard.
 
 image::{image-uri-niu-mini}[Picture of the NIU Mini keyboard]
 A compact 40% (12x4) ortholinear keyboard kit sold by KBDFans.
-The NIU Mini can run QMK firmware and this layout is made with QMK. If you don't know what QMK is read the section <<What is QMK?>>.
+
+The NIU Mini can run QMK firmware and this layout is made with QMK. If you don't know what QMK is read the <<What is QMK?>> section!
 
 === Layout
 This keymap uses the {uri-colemak-mod-dh}[Colemak-DH] keyboard layout which is a mod on the {uri-colemak}[Colemak] layout.
